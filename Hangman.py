@@ -55,6 +55,8 @@ while not end_of_game:
     if "_" not in display:
         end_of_game = True
         print("You win!")
+    else:
+        print(f'The solution is {chosen_word}.')
 
     #TODO-2: - Import the stages from hangman_art.py and make this error go away.
     from hangman_art import stages
