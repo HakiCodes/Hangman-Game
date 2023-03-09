@@ -17,7 +17,7 @@ from hangman_art import logo
 print(logo)
 
 #Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+# print(f'Pssst, the solution is {chosen_word}.')
 
 #Create blanks
 display = []
@@ -56,7 +56,8 @@ while not end_of_game:
         end_of_game = True
         print("You win!")
     else:
-        print(f'The solution is {chosen_word}.')
+        if end_of_game == True:
+            print(f'The solution is {chosen_word}.')
 
     #TODO-2: - Import the stages from hangman_art.py and make this error go away.
     from hangman_art import stages
